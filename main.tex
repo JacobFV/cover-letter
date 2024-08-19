@@ -1,0 +1,101 @@
+\documentclass[12pt]{letter}
+\usepackage[utf8]{inputenc}
+\usepackage[empty]{fullpage}
+\usepackage[hidelinks]{hyperref}
+\usepackage{graphicx}
+\usepackage{fontawesome5}
+\usepackage{eso-pic}
+\usepackage{charter}
+
+\addtolength{\topmargin}{-0.5in}
+\addtolength{\textheight}{1.0in}
+\definecolor{gr}{RGB}{225,225,225}
+ 
+% Personal Information
+\newcommand{\myname}{Jacob F Valdez}
+\newcommand{\myemail}{jacob@humanrobots.ai}
+\newcommand{\myphone}{+1-469-968-9490}
+\newcommand{\mylocation}{Anywhere (currently, Midlothian, TX)}
+\newcommand{\mylinkedin}{jacob-f-valdez}
+\newcommand{\mytitle}{Software Engineering Intern Applicant}
+
+% Recipient Information
+\newcommand{\recipient}{Hiring Manager}
+\newcommand{\company}{Microsoft}
+\newcommand{\street}{One Microsoft Way}
+\newcommand{\city}{Redmond}
+\newcommand{\state}{WA}
+\newcommand{\zip}{98052}
+
+\newcommand{\greeting}{Dear}
+\newcommand{\closer}{Sincerely}
+
+\begin{document}
+
+% Shaded banner
+\AddToShipoutPictureBG{%
+    \AtPageUpperLeft{%
+        % Top banner (new)
+        \put(0,-1.45in){%
+            \color{gr}%
+            \rule{\paperwidth}{1.45in}%
+        }%
+        % Bottom banner (existing)
+        \put(0,-\paperheight){%
+            \color{gr}%
+            \rule{\paperwidth}{1.9in}%
+        }%
+    }%
+}
+
+% Header
+\begin{center}
+    {\fontsize{28}{0}\selectfont\scshape \myname}
+
+    {\fontsize{10.5}{0}\selectfont\href{mailto:\myemail}{\faEnvelope\enspace \myemail} \quad \href{tel:\myphone}{\faPhone\enspace \myphone} \quad \faMapMarker\enspace \mylocation}
+    \vspace{-0.1in}
+    {\fontsize{10.5}{0}\selectfont\href{https://linkedin.com/in/\mylinkedin}{\faLinkedinIn\enspace linkedin.com/in/\mylinkedin} \quad \href{https://github.com/JacobFV}{\faGithub\enspace github.com/JacobFV}}
+\end{center}
+
+\vspace{0.2in}
+
+% Opening block
+\today\\
+
+\vspace{-0.1in}\recipient\\
+\company\\
+\street\\
+\city, \state\ \zip\\
+
+\vspace{-0.1in}\greeting\ \recipient,\\
+
+% Body
+\vspace{-0.1in}\setlength\parindent{24pt}
+\noindent I am writing to express my strong interest in the Software Engineer: Fullstack Intern position at Microsoft in Redmond, Washington. As a computer science graduate with diverse technical skills and entrepreneurial experience, I am excited to contribute to Microsoft's innovative mission.
+
+My background in computer science and experience in full-stack development, machine learning, and robotics align well with this internship's requirements. Key projects that demonstrate my ability to solve complex problems and build innovative solutions include:
+
+\begin{itemize}
+    \item Developing a full-stack web server using Next-React-GraphQL-Strapi stack at \href{https://itlab.uta.edu}{UTA's IT Lab}.
+    \item Leading a team to implement on-device conversational AI using BlenderBot-small in an \href{https://github.com/kmosoti/DesparadosAEYE}{Android app}.
+    \item Creating a \$1,000 general-purpose \href{https://www.youtube.com/playlist?list=PLMkgx9jjZQwejmpqk0tBEY1AXa9s30bE4}{humanoid robot prototype}, demonstrating innovation in challenging environments.
+\end{itemize}
+
+I am drawn to Microsoft's track record of innovation and emphasis on growth mindset. I'm eager to bring my technical skills, creativity, and entrepreneurial spirit to your team, contributing to impactful next-generation software development.
+
+Thank you for considering my application. I'm excited about the possibility of joining Microsoft as a Software Engineering Intern and would welcome the opportunity to discuss how I can contribute to your team's success.
+
+% Closer
+\vspace{0.1in}
+\vfill
+
+\begin{flushright}
+    \closer,
+
+    \vspace{-0.1in}\includegraphics[width=1.5in]{sig.png}\vspace{-0.1in}
+
+    \myname\\
+    \mytitle
+\end{flushright}
+
+\end{document}
